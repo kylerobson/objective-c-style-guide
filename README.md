@@ -531,16 +531,3 @@ When possible, always turn on “Treat Warnings as Errors” in the target’s B
 
 To make the Xcode code snippets consistent with this style guide, they can be edited. One way to edit them is with [this tool](http://cocoaholic.com/snippet_edit/).
  
-# Other Objective-C Style Guides
-
-If ours doesn’t fit your tastes, have a look at some other style guides:
-
-* [Google](http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml)
-* [GitHub](https://github.com/github/objective-c-conventions)
-* [Adium](https://trac.adium.im/wiki/CodingStyle)
-* [Sam Soffes](https://gist.github.com/soffes/812796)
-* [CocoaDevCentral](http://cocoadevcentral.com/articles/000082.php)
-* [Luke Redpath](http://lukeredpath.co.uk/blog/2011/06/28/my-objective-c-style-guide/)
-* [Marcus Zarra](http://www.cimgf.com/zds-code-style-guide/)
-* [Wikimedia](https://www.mediawiki.org/wiki/Wikimedia_Apps/Team/iOS/ObjectiveCStyleGuide)
-
