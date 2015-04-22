@@ -527,6 +527,10 @@ Use ARC.
 
 When possible, always turn on “Treat Warnings as Errors” in the target’s Build Settings and enable as many [additional warnings](http://boredzo.org/blog/archives/2009-11-07/warnings) as possible. If you need to ignore a specific warning, use [Clang’s pragma feature](http://clang.llvm.org/docs/UsersManual.html#controlling-diagnostics-via-pragmas).
 
+## Snippets
+
+To make the Xcode code snippets consistent with this style guide, they can be edited. One way to edit them is with [this tool](http://cocoaholic.com/snippet_edit/).
+ 
 # Other Objective-C Style Guides
 
 If ours doesn’t fit your tastes, have a look at some other style guides:
