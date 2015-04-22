@@ -498,7 +498,7 @@ Views should be suffixed with "View", ViewControllers should be suffixed with "V
 
 Sometimes Apple does not follow a consistent naming pattern for views. If subclassing one of these views such as UITableViewCell, a name such as RBUserTableViewCell is acceptable.
 
-** For Example:**
+**For Example:**
 
 ```objc
 RBUser.h
