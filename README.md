@@ -258,6 +258,10 @@ Methods exposed in the interface of this class should be at the top of the imple
 }
 ```
 
+Use NS_DESIGNATED_INITIALIZER when possible. Not all Apple classes use this correctly so calling NS_DESIGNATED_INITIALIZER may not always be possible. If implementing an init method, call the designated initializer if it is specified. When implementing multiple init methods, put common init work into one method called by all of them (e.g. commonInit).
+
+Don't start off method names with "init" if it does not return instancetype.
+
 ## Pragma marks
 
 Use pragma marks to order code. Use an empty line before and after pragmas. The following common ones should be used on every page where applicable:
