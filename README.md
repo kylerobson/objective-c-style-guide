@@ -135,15 +135,6 @@ In method signatures, there should be a space after the scope (`-` or `+` symbol
 - (void)setExampleText:(NSString *)text image:(UIImage *)image;
 ```
 
-In Method implementations, the opening curly brace should be on the same line as the method signature.
-
-**For Example**
-```objc
-- (void)setExampleText:(NSString *)text image:(UIImage *)image {
-
-}
-```
-
 ## Variables
 
 Variables should be named as descriptively as possible. Single letter variable names should be avoided except as simple counter variables in `for` loops.
@@ -242,16 +233,21 @@ When they are needed, comments should be used to explain **why** a particular pi
 
 Block comments should generally be avoided, as code should be as self-documenting as possible, with only the need for intermittent, few-line explanations. This does not apply to those comments used to generate documentation.
 
-## Ordering of methods
+## File organization
 
 Imports at the top.
 
-Methods exposed in the interface of this class should be at the top. Below that any methods inherited from super. Below that methods for protocols specified in the interface. Below that any private methods for this implementation. Below that any protocol methods specified from this implementation file (using class extension).
+Constants below the imports.
+
+Class extension below constants.
+
+Implementation below class extension.
+
+Methods exposed in the interface of this class should be at the top of the implementation. Below that any methods inherited from super. Below that methods for protocols specified in the interface. Below that any private methods for this implementation. Below that any protocol methods specified from this implementation file (using class extension).
 
 `@synthesize` and `@dynamic` statements at the very bottom.
-Constants near the top of the file, below the imports.
 
-`init` methods should be structured like this:
+`init` methods should be structured like this. Built in code snippets can be edited to clean them up (they're totally inconsistent and often left out of date by the Xcode team):
 
 ```objc
 - (instancetype)init {
@@ -309,7 +305,7 @@ Interfaces should not expose mutable data structures. When working with objects 
 
 ## Constants
 
-Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `static` constants and not `#define`s unless explicitly being used as a macro.
+Constants are preferred over in-line string literals or numbers, as they allow for easy reproduction of commonly used variables and can be quickly changed without the need for find and replace. Constants should be declared as `static` constants and not `#define`s unless explicitly being used as a macro. Use a struct constant to organize constants together when possible.
 
 **For example:**
 
@@ -509,11 +505,15 @@ RBUserController.h // For a UIViewController subclass, this is bad
 
 ## Storyboards/Nibs
 
-Use storyboards and nibs when possible over purely using code. Use of storyboards should be combined with subclassing and categories for code reuse and maintainability. All view controllers that use Interface Builder should be defined in a storyboard. Multiple storyboards should be used. Storyboards should either contain one view controller per storyboard or contain one section/user story per storyboard. Nibs should be used for UIView subclasses.
+Use storyboards and nibs when possible over purely using code. Use of storyboards should be combined with subclassing and categories for code reuse and maintainability. All view controllers that use Interface Builder should be defined in a storyboard. Multiple storyboards should be used. Storyboards should either contain one view controller per storyboard or contain one section/user story per storyboard. Nibs should be used for UIView subclasses. Storyboards should be named after the initial view controller. Nibs should be named after the view class.
 
 ## Autolayout
 
 Use auto layout when possible. Manual layout should be used as a last resort when auto layout is not well suited to a task (for example, collection view layout subclass is manual layout). When doing auto layout in code, use PureLayout over the built-in verbose ways of doing auto layout.
+
+## ARC
+
+Use ARC.
 
 ## Xcode project
 
