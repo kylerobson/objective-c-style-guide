@@ -9,30 +9,6 @@ Here are some of the documents from Apple that informed the style guide. If some
 * [Coding Guidelines for Cocoa](https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html)
 * [iOS App Programming Guide](http://developer.apple.com/library/ios/#documentation/iphone/conceptual/iphoneosprogrammingguide/Introduction/Introduction.html)
 
-## Table of Contents
-
-* [Dot Notation Syntax](#dot-notation-syntax)
-* [Spacing](#spacing)
-* [Conditionals](#conditionals)
-  * [Ternary Operator](#ternary-operator)
-* [Error handling](#error-handling)
-* [Methods](#methods)
-* [Variables](#variables)
-* [Naming](#naming)
-* [Comments](#comments)
-* [Init & Dealloc](#init-and-dealloc)
-* [Literals](#literals)
-* [CGRect Functions](#cgrect-functions)
-* [Constants](#constants)
-* [Enumerated Types](#enumerated-types)
-* [Bitmasks](#bitmasks)
-* [Private Properties](#private-properties)
-* [Image Naming](#image-naming)
-* [Booleans](#booleans)
-* [Singletons](#singletons)
-* [Imports](#imports)
-* [Xcode Project](#xcode-project)
-
 ## Dot Notation Syntax
 
 Dot notation should **always** be used for accessing and mutating properties. Bracket notation is preferred in all other instances.
