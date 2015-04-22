@@ -500,16 +500,19 @@ Sometimes Apple does not follow a consistent naming pattern for views. If subcla
 
 ** For Example:**
 
+```objc
 RBUser.h
 RBUserView.h
 RBUserViewController.h
 RBUserController.h // this is not a view controller, this is an NSObject
+```
 
 **Not:**
-
+```objc
 RBUserObject.h // It's obvious that it's an object
 RBUserScreen.h // For a UIView subclass, this is bad
 RBUserController.h // For a UIViewController subclass, this is bad
+```
 
 ## Storyboards/Nibs
 
