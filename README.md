@@ -201,11 +201,15 @@ Constants available only within an implementation file should be named prefixed 
 
 **For example:**
 
+```objc
 static const int kMaximumItemCount = 50;
+```
 
 **Not:**
 
+```objc
 static int MAXIMUM_ITEM_COUNT = 50;
+```
 
 Properties and local variables should be camel-case with the leading word being lowercase.
 
